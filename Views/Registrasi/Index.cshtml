@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Form Registrasi</h1>
+
+
+<form method="POST" action="/Registrasi/Tampil">
+    <div class="form-group">
+        <label for="Firstname">Firstname : </label>
+        <input name="Firstname" class="form-control" type="text" />
+    </div>
+    <div class="form-group">
+        <label for="Lastname">Lastname : </label>
+        <input name="Lastname" class="form-control" type="text" />
+    </div>
+    <div class="form-group">
+        <label for="Address">Address : </label>
+        <input name="Address" class="form-control" type="text" />
+    </div>
+    <div class="form-group">
+        <label for="Telp">Telp : </label>
+        <input name="Telp" class="form-control" type="text" />
+    </div>
+    <input id="Submit1" class="btn btn-primary" type="Submit" value="Submit" />
+
+</form>
