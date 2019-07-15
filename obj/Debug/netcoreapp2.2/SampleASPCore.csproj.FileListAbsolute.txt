@@ -31,3 +31,11 @@ C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\SampleASPCore.
 C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\SampleASPCore.csprojAssemblyReference.cache
 C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Registrasi\Index.g.cshtml.cs
 C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Registrasi\Tampil.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Mahasiswa\Index.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Mahasiswa\Create.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Mahasiswa\Details.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Pengguna\Registrasi.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Pengguna\Login.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Upload\UploadFile.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Pengguna\Login2.g.cshtml.cs
+C:\Users\ASUS\source\repos\SampleASPCore2\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout2.g.cshtml.cs

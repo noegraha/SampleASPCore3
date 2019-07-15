@@ -61,6 +61,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.3, )"
+            },
+            "Syncfusion.Pdf.AspNet.Mvc5": {
+              "target": "Package",
+              "version": "[17.1.0.53, )"
+            },
+            "dapper": {
+              "target": "Package",
+              "version": "[1.60.9, )"
             }
           },
           "imports": [

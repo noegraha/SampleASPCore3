@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SampleASPCore.Models;
 
-namespace SampleASPCore2.Controllers
+namespace SampleASPCore.Controllers
 {
 
     public class RegistrasiController : Controller

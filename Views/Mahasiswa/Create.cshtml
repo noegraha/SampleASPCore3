@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model SampleASPCore.Models.Mahasiswa
+@{
+    Layout = "_Layout";
+}
+<h2>Form Tambah Mahasiwa</h2>
+<a asp-action="Index" class="btn btn-success btn-xs">Tampil Data</a>
+<br />
+<div class="row">
+    @if (ViewData["Pesan"] != null)
+    {
+        @Html.Raw(ViewData["Pesan"])
+    }
+</div>
+<br />
+<br />
+<div class="col-md-6">
+    <form asp-action="CreatePost">
+        <div class="form-group">
+            <label asp-for="NIM" class="control-label">NIM</label>
+            <input asp-for="NIM" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Nama" class="control-label">Nama</label>
+            <input asp-for="Nama" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label">Email</label>
+            <input asp-for="Email" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Telp" class="control-label">Telp</label>
+            <input asp-for="Telp" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

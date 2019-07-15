@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+<h2>Tabel Mahasiswa</h2>
+
+<a asp-action="Create" class="btn btn-success btn-xs">Tambah Data</a>
+<br /><br />
+<div class="row">
+    @if (ViewData["Pesan"] != null)
+    {
+        @Html.Raw(ViewData["Pesan"])
+    }
+</div>
+<br />
+<div class="row">
+    <form asp-action="Search" class="form-inline navbar-search">
+        <div class="input-group">
+            <input type="radio" name="milih" value="NIM" class="form-control" />NIM &nbsp;
+            <input type="radio" name="milih" value="Nama" class="form-control" />Nama &nbsp;
+            <input type="text" name="keyword" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search fa-sm"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <form asp-action="Search" class="form-inline">
+        <div class="form-group">
+            <input type="radio" name="milih" value="NIM" class="form-control" />NIM &nbsp;
+            <input type="radio" name="milih" value="Nama" class="form-control" />Nama &nbsp;
+            <label for="keyword">Masukkan Keyword :</label>
+            <input type="text" name="keyword" placeholder="Masukkan NIM yang dicari" />
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <br />
+</div>
+<table class="table table-striped">
+    <tr>
+        <th>NIM</th>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Telp</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>@data.NIM</td>
+            <td>@data.Nama</td>
+            <td>@data.Email</td>
+            <td>@data.Telp</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@data.NIM">Edit</a>
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@data.NIM">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
